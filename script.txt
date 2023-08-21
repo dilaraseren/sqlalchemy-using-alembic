@@ -1,0 +1,7 @@
+cd sqlalchemy-using-alembic
+alembic init migrations komutu ile config dosyalarının gelmesi sağlanır
+1. alembic.ini dosyasında url kısmı düzenlenir 
+2. env dosyasında metadata kısımları base model oluşturacak şekilde düzenlenir
+3. model oluştulur
+4. alembic revision --autogenerate -m "create model users" denir ve ilk mig oluşur 
+5. alembic upgrade heads diyerek db güncellenir. 
